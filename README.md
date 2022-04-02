@@ -9,3 +9,5 @@ Explicação dos arquivos pelas pastas:
 2 - No segundo exercício foi feita uma função para receber um numero, e a primeira coisa feita foi transformá-lo em binário pela função "bin" e logo em seguida colocar em uma lista para facilitar a contagem dos valores, foi utilizado a função "del" para apagar números desnecessários que estavam aparecendo. E para finalizar, usado a função "find" para percorrer a lista sempre ignorando os números negativos.
 
 4 - No quarto exercício comecei somando todos os numeros, utilizando for e o range de "1000". Em seguida transformei em uma lista para poder mexer nos ultimos valores do numero que foi formado, com o "i" negativo, sendo possível pegar os ultimos da lista dessa maneira, e adicinei esses valores encontrados em uma outra lista que é a resposta. 
+
+#### Python Orientado a Objetos

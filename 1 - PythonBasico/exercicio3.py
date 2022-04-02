@@ -10,6 +10,3 @@ No Reino Unido, a moeda é composta de libra (£) e pence (p). Existem oito moed
 De quantas maneiras diferentes podem ser feitas £2 usando qualquer número de moedas?
 '''
 
-lista = [1,2,3,4,5]
-
-print(lista[-1])
