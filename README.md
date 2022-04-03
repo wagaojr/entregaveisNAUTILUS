@@ -16,4 +16,8 @@ Explicação dos arquivos pelas pastas:
 
 ####  Arduino e Sensores
 
-1 - 
+1 - Para o entregável de arduino foi utilizado um potenciômetro e 6 leds RGB, e a ideia da atividade é fazer os leds acenderem por meio do potenciômetro, além de ter a opção de mudar as cores do led por meio do terminal. No meu entregável foi configurado os leds como 1 = Vermelho, 2 = Verde, 3 = Azul. Após a criação das variáveis em seus respectivos pinos, no void setup coloquei apenas as funções de cada pino, se é INPUT ou OUTPUT. No void loop, para a mudança de cores foi feita através do "Serial.available()", que identifica se há alguma coisa no terminal, e esse valor é enviado para a variável "mensagem" e por meio dela define-se qual a cor, se = 1, o pino do vermelho ficará HIGH e os outros LOW, e assim por diante. Para acender os leds conforme o potenciômetro, é necessário ler o valor do potenciômetro por meio do "analogRead" e jogar para uma variável que por sua vez é jogada na função "map" para ser convertida em um valor entre 0 e 255 e novamente esse valor é jogado para outra variável que finalmente vai para os leds por meio do "digitalWrite".
+
+Link do entregável: https://www.tinkercad.com/things/6NNGqSUx7vd-circuito-do-entregavel-wagner/editel?sharecode=QapTVrjwu1r0CI_VGGel3O__pAMAdnDykocz4vgJUII
+
+#### Controle e Localização
