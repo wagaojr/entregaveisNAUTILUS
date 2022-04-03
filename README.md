@@ -11,3 +11,9 @@ Explicação dos arquivos pelas pastas:
 4 - No quarto exercício comecei somando todos os numeros, utilizando for e o range de "1000". Em seguida transformei em uma lista para poder mexer nos ultimos valores do numero que foi formado, com o "i" negativo, sendo possível pegar os ultimos da lista dessa maneira, e adicinei esses valores encontrados em uma outra lista que é a resposta. 
 
 #### Python Orientado a Objetos
+
+1 - Para esse entregável eu usei como base jogadores de LOL e dois times para fazer a correlação dos dois. Primeiramente é criado o "método construtor" com init para os times e uma função que retorna as informações de cada time instanciado, da mesma maneira existe uma classe para os participantes. Os times possuem as informações do nome e da pontuação e os participantes as informações de qual time pertence, numero de abates e numero de mortes. Com os métodos mágicos foi feita uma comparação dos times e dos participantes pelo desempenho de cada um.
+
+####  Arduino e Sensores
+
+1 - 
