@@ -20,4 +20,6 @@ Explicação dos arquivos pelas pastas:
 
 Link do entregável: https://www.tinkercad.com/things/6NNGqSUx7vd-circuito-do-entregavel-wagner/editel?sharecode=QapTVrjwu1r0CI_VGGel3O__pAMAdnDykocz4vgJUII
 
-#### Controle e Localização
+#### Docker
+
+1 - Para o docker foi feito um entregável que consistia na preparação do ambiente da nautilus, por meio de uma imagem construida no dockerfile que monta todo o ROS para os containers que eu for usar. Link do dockerhub:
