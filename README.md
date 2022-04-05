@@ -23,3 +23,7 @@ Link do entregável: https://www.tinkercad.com/things/6NNGqSUx7vd-circuito-do-en
 #### Docker
 
 1 - Para o docker foi feito um entregável que consistia na preparação do ambiente da nautilus, por meio de uma imagem construida no dockerfile que monta todo o ROS para os containers que eu for usar. Link do dockerhub: https://hub.docker.com/repository/docker/wagaojr/entregavel
+
+#### Controle e Localização
+
+1 - Em controle e localização o entregável consistia em aplicar um controle PID como resposta ao erro de uma gangorra, todo o cálculo foi feito em python seguindo a fórmula "PID Kp*(erro) + Kd*(erro_derivativo) + Ki*(erro_integral)" sendo aplicada 10 vezes, através de um for. Foi feito tanto o PID acumlulado quanto o do ultimo loop.
