@@ -3,7 +3,7 @@ version: "3"
 services:
   nautilus_ps:
     container_name: "nautilus_ps"
-    image: a9a9f51d6bc1
+    image: 79e5c0d34db9
     privileged: true
     environment:
       - DISPLAY=${DISPLAY}
