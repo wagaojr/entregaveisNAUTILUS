@@ -1,5 +1,5 @@
 # entregaveisNAUTILUS
-Aqui constam todos os meus entregáveis do processo de capacitação da UFRJ Nautlius
+Aqui constam todos os meus entregáveis do processo de capacitação da UFRJ Nautilus
 
 Explicação dos arquivos pelas pastas:
 
@@ -22,4 +22,4 @@ Link do entregável: https://www.tinkercad.com/things/6NNGqSUx7vd-circuito-do-en
 
 #### Docker
 
-1 - Para o docker foi feito um entregável que consistia na preparação do ambiente da nautilus, por meio de uma imagem construida no dockerfile que monta todo o ROS para os containers que eu for usar. Link do dockerhub:
+1 - Para o docker foi feito um entregável que consistia na preparação do ambiente da nautilus, por meio de uma imagem construida no dockerfile que monta todo o ROS para os containers que eu for usar. Link do dockerhub: https://hub.docker.com/repository/docker/wagaojr/entregavel
