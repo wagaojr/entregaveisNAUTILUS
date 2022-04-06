@@ -18,6 +18,8 @@ Explicação dos arquivos pelas pastas:
 
 1 - Para o entregável de arduino foi utilizado um potenciômetro e 6 leds RGB, e a ideia da atividade é fazer os leds acenderem por meio do potenciômetro, além de ter a opção de mudar as cores do led por meio do terminal. No meu entregável foi configurado os leds como 1 = Vermelho, 2 = Verde, 3 = Azul. Após a criação das variáveis em seus respectivos pinos, no void setup coloquei apenas as funções de cada pino, se é INPUT ou OUTPUT. No void loop, para a mudança de cores foi feita através do "Serial.available()", que identifica se há alguma coisa no terminal, e esse valor é enviado para a variável "mensagem" e por meio dela define-se qual a cor, se = 1, o pino do vermelho ficará HIGH e os outros LOW, e assim por diante. Para acender os leds conforme o potenciômetro, é necessário ler o valor do potenciômetro por meio do "analogRead" e jogar para uma variável que por sua vez é jogada na função "map" para ser convertida em um valor entre 0 e 255 e novamente esse valor é jogado para outra variável que finalmente vai para os leds por meio do "digitalWrite".
 
+OBS!! Só dá para ver o funcionamento do potenciômetro após inserir o número de seu desejo no monitor serial.
+
 Link do entregável: https://www.tinkercad.com/things/6NNGqSUx7vd-circuito-do-entregavel-wagner/editel?sharecode=QapTVrjwu1r0CI_VGGel3O__pAMAdnDykocz4vgJUII
 
 #### Docker
@@ -27,3 +29,11 @@ Link do entregável: https://www.tinkercad.com/things/6NNGqSUx7vd-circuito-do-en
 #### Controle e Localização
 
 1 - Em controle e localização o entregável consistia em aplicar um controle PID como resposta ao erro de uma gangorra, todo o cálculo foi feito em python seguindo a fórmula "PID Kp*(erro) + Kd*(erro_derivativo) + Ki*(erro_integral)" sendo aplicada 10 vezes, através de um for. Foi feito tanto o PID acumlulado quanto o do ultimo loop.
+
+#### ROS Básico
+
+1 - Para o entregável de ROS básico, foi feito uma primeira aplicação de publisher e subscriber, com a ideia de velocidade e usando os vetores angular e linear, usei uma mensagem geometry do tipo "Accel" que trata justamente do tópico do entregável. Coloquei todo o pacote na pasta do ROS, para poder ser executado. 
+
+#### ROS Tópicos Especiais
+
+1 - 
