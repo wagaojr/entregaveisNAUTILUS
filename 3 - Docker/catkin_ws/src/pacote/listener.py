@@ -1,23 +1,34 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import rospy
-from std_msgs.msg import String
+from geometry_msgs.msg import Accel
+from std_msgs.msg import Float32
+import math
 
-def callback(data):
-    rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
-    
-def listener():
+class Listener():
 
-    # In ROS, nodes are uniquely named. If two nodes with the same
-    # name are launched, the previous one is kicked off. The
-    # anonymous=True flag means that rospy will choose a unique
-    # name for our 'listener' node so that multiple listeners can
-    # run simultaneously
-    rospy.init_node('listener', anonymous=True)
+  def __init__(self):
+      rospy.init_node('listener', anonymous=True)
+      rospy.Subscriber("entregavel", Accel, self.callback)
+      self.pub = rospy.Publisher('valoreslinear', Float32, queue_size=10)
+      self.pub2 = rospy.Publisher('valoresangular', Float32, queue_size=10)
+  
+  def callback(self, msg):
+      linearx, lineary, linearz = msg.linear.x, msg.linear.y, msg.linear.z  
+      quadrados = linearx**2 + lineary**2 + linearz*2
+      resultado = math.sqrt(quadrados)
+      f = Float32()
+      f.data = resultado
+      self.pub.publish(f)
 
-    rospy.Subscriber("chatter", String, callback)
+      angularx, angulary, angularz = msg.angular.x, msg.angular.y, msg.angular.z
+      quadrados2 = angularx**2 + angulary**2 + angularz*2
+      resultado2 = math.sqrt(quadrados2)
+      f2 = Float32()
+      f2.data = resultado2
+      self.pub2.publish(f2)
 
-    # spin() simply keeps python from exiting until this node is stopped
-    rospy.spin()
+
 
 if __name__ == '__main__':
-    listener()
+    l = Listener()
+    rospy.spin()

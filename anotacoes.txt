@@ -1,3 +1,4 @@
 source devel/setup.bash 
 echo $ROS_PACKAGE_PATH  #verificar     
 docker-compose up -d; docker attach nautilus_ps    #iniciar container com o ros
+chmod -x <arquivo.py>
