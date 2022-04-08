@@ -36,4 +36,4 @@ Link do entregável: https://www.tinkercad.com/things/6NNGqSUx7vd-circuito-do-en
 
 #### ROS Tópicos Especiais
 
-1 - 
+1 - No entregável de tópicos especiais foi utilizado os conceitos de launch, parâmetro, transformadas e o rviz. Nessa atividade foi feito um sistema solar, e por meio das mensagens em forma de transformadas foi possivel modificar a translação dos planetas como o tempo do ros. No meu yaml tem os nomes de cada planeta e seus respectivos raios, e através do get_param foi possível acessar esses valores. É possível visualizar todo o trabalho por meio rviz.
