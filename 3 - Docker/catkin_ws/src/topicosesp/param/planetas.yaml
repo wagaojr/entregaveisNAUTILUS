@@ -1,0 +1,18 @@
+planetas:
+  Mercurio: 
+    raio: 1
+  Venus: 
+    raio: 2
+  Terra: 
+    raio: 3
+  Marte: 
+    raio: 4
+  Jupiter: 
+    raio: 5
+  Saturno: 
+    raio: 6
+  Urano: 
+    raio: 7
+  Netuno: 
+    raio: 8
+

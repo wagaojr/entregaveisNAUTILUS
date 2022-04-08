@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+    <rosparam command="load" file="$(find topicosesp)/param/planetas.yaml"/> 
+    <node pkg="topicosesp" name="sistemasolar" type="sistemasolar.py"/>
+
+</launch>
